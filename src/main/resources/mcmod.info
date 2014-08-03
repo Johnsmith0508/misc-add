@@ -1,0 +1,16 @@
+[
+{
+  "modid": "miscadd",
+  "name": "Misc Add",
+  "description": "Random things added to minecraft",
+  "version": "1.7.10-1.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Johnsmith0508", "King_INF3RN0"],
+  "credits": "All of the texture artists (including DinnerBeef, UnrealDinnerbone, and King_INF3RN0), along with all of the people who game me the awesome ideas",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
