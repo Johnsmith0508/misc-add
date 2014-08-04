@@ -1,6 +1,7 @@
 package com.jsmith.miscadd;
 
 import com.jsmith.miscadd.init.ModBlocks;
+import com.jsmith.miscadd.init.Recipies;
 import com.jsmith.miscadd.reference.Reference;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -26,7 +27,7 @@ public class MiscAdd
 @Mod.EventHandler
     public void init(FMLInitializationEvent event)
 {
-
+    Recipies.init();
 }
 
 @Mod.EventHandler
