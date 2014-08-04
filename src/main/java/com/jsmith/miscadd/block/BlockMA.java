@@ -20,6 +20,8 @@ public class BlockMA extends Block
     {
         super(material);
         this.setCreativeTab(TabDense.MA_TAB);
+        this.setHardness(3.0f);
+        this.setHarvestLevel("pickaxe", 2);
     }
     @Override
     public String getUnlocalizedName()
