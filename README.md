@@ -6,7 +6,8 @@ a minecraft mod
 ### Recipes
 
 Dense Blocks:
-```III
+```
+III
 III
 III
 ```
