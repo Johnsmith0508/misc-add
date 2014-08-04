@@ -6,3 +6,10 @@ tile.miscadd:DenseIron.name=Dense Iron Block
 tile.miscadd:DenseLapis.name=Dense Lapis Lazuli Block
 tile.miscadd:DenseQuartz.name=Dense Quartz Block
 tile.miscadd:DenseRedstone.name=Dense Redstone Block
+
+
+item.miscadd:EmeraldShovel.name=Emerald Shovel
+item.miscadd:EmeraldSword.name=Emerald Sword
+item.miscadd:EmeraldHoe.name=Emerald Hoe
+item.miscadd:EmeraldAxe.name=Emerald Axe
+item.miscadd:EmeraldPick.name=Emerald Pickaxe
