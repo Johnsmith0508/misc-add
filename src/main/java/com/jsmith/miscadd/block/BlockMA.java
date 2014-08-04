@@ -1,5 +1,6 @@
 package com.jsmith.miscadd.block;
 
+import com.jsmith.miscadd.creativeTab.TabDense;
 import com.jsmith.miscadd.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -18,7 +19,7 @@ public class BlockMA extends Block
     public BlockMA(Material material)
     {
         super(material);
-        this.setCreativeTab(CreativeTabs.tabFood);
+        this.setCreativeTab(TabDense.MA_TAB);
     }
     @Override
     public String getUnlocalizedName()
