@@ -13,3 +13,8 @@ item.miscadd:EmeraldSword.name=Emerald Sword
 item.miscadd:EmeraldHoe.name=Emerald Hoe
 item.miscadd:EmeraldAxe.name=Emerald Axe
 item.miscadd:EmeraldPick.name=Emerald Pickaxe
+
+item.miscadd:emeraldHelm.name=Emerald Helm
+item.miscadd:emeraldChest.name=Emerald Chestplate
+item.miscadd:emeraldLegs.name=Emerald Leggings
+item.miscadd:emeraldBoots.name=Emerald Boots

@@ -4,6 +4,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.WorldSettings;
 
 /**
  * Created by JohnSmith0508 on 3/8/14 at 8:55 PM.
@@ -12,6 +13,9 @@ public class Recipes
 {
     public static void init()
     {
+        /**
+         * Blocks
+         */
         GameRegistry.addRecipe(
                 new ItemStack(ModBlocks.denseCoal),
                 "ccc",
@@ -53,6 +57,9 @@ public class Recipes
                 "ccc",
                 "ccc", 'c', new ItemStack(Blocks.redstone_block));
 
+        /**
+         * Tools
+         */
         GameRegistry.addRecipe(
                 new ItemStack(ModItems.emeraldAxe),
                 "ee",
@@ -87,6 +94,37 @@ public class Recipes
         GameRegistry.addRecipe(
                 new ItemStack(ModItems.emeraldSword),
                 "e","e","s",'e',new ItemStack(Items.emerald),'s',new ItemStack(Items.stick)
+        );
+
+        /**
+         * Tools
+         */
+        GameRegistry.addRecipe(
+                new ItemStack(ModItems.emeraldArmorBoots),
+                "eee",
+                "e e",
+                "",
+                'e',new ItemStack(Items.emerald)
+        );
+        GameRegistry.addRecipe(
+                new ItemStack(ModItems.emeraldArmorChest),
+                "e e",
+                "eee",
+                "eee",
+                'e',new ItemStack(Items.emerald)
+        );
+        GameRegistry.addRecipe(
+                new ItemStack(ModItems.emeraldArmorLegs),
+                "eee",
+                "e e",
+                "e e",
+                'e',new ItemStack(Items.emerald)
+        );
+        GameRegistry.addRecipe(
+                new ItemStack(ModItems.emeraldArmorBoots),
+                "e e",
+                "e e",
+                'e',new ItemStack(Items.emerald)
         );
 
 
