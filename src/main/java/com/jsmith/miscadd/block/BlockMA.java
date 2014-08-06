@@ -1,13 +1,12 @@
 package com.jsmith.miscadd.block;
 
-import com.jsmith.miscadd.creativeTab.TabDense;
+import com.jsmith.miscadd.creativeTab.TabMA;
 import com.jsmith.miscadd.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 
 /**
  * Created by JohnSmith0508 on 3/8/14 at 12:33 PM.
@@ -19,7 +18,7 @@ public class BlockMA extends Block
     public BlockMA(Material material)
     {
         super(material);
-        this.setCreativeTab(TabDense.MA_TAB);
+        this.setCreativeTab(TabMA.MA_TAB);
         this.setHardness(3.0f);
         this.setHarvestLevel("pickaxe", 2);
     }

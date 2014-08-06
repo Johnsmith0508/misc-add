@@ -17,125 +17,80 @@ public class Recipes
          * Blocks
          */
         GameRegistry.addRecipe(
-                new ItemStack(ModBlocks.denseCoal),
+                new ItemStack(ModBlocks.denseCoal),//
                 "ccc",
                 "ccc",
                 "ccc", 'c', new ItemStack(Blocks.coal_block));
         GameRegistry.addRecipe(
-                new ItemStack(ModBlocks.denseIron),
+                new ItemStack(ModBlocks.denseIron),//
                 "ccc",
                 "ccc",
                 "ccc", 'c', new ItemStack(Blocks.iron_block));
         GameRegistry.addRecipe(
-                new ItemStack(ModBlocks.denseDiamond),
+                new ItemStack(ModBlocks.denseDiamond),//
                 "ccc",
                 "ccc",
                 "ccc", 'c', new ItemStack(Blocks.diamond_block));
         GameRegistry.addRecipe(
-                new ItemStack(ModBlocks.denseEmerald),
+                new ItemStack(ModBlocks.denseEmerald),//
                 "ccc",
                 "ccc",
                 "ccc", 'c', new ItemStack(Blocks.emerald_block));
         GameRegistry.addRecipe(
-                new ItemStack(ModBlocks.denseGold),
+                new ItemStack(ModBlocks.denseGold),//
                 "ccc",
                 "ccc",
                 "ccc", 'c', new ItemStack(Blocks.gold_block));
         GameRegistry.addRecipe(
-                new ItemStack(ModBlocks.denseLapis),
+                new ItemStack(ModBlocks.denseLapis),//
                 "ccc",
                 "ccc",
                 "ccc", 'c', new ItemStack(Blocks.lapis_block));
         GameRegistry.addRecipe(
-                new ItemStack(ModBlocks.denseQuartz),
+                new ItemStack(ModBlocks.denseQuartz),//
                 "ccc",
                 "ccc",
                 "ccc", 'c', new ItemStack(Blocks.quartz_block));
         GameRegistry.addRecipe(
-                new ItemStack(ModBlocks.denseRedstone),
+                new ItemStack(ModBlocks.denseRedstone),//
                 "ccc",
                 "ccc",
                 "ccc", 'c', new ItemStack(Blocks.redstone_block));
-
         /**
-         * Tools
+         * Block uncrafting
          */
-        GameRegistry.addRecipe(
-                new ItemStack(ModItems.emeraldAxe),
-                "ee",
-                "es",
-                " s",
-
-                'e', new ItemStack(Items.emerald),
-                's', new ItemStack(Items.stick)
-        );
-        GameRegistry.addRecipe(
-                new ItemStack(ModItems.emeraldHoe),
-                "ee",
-                " s",
-                " s",
-
-                'e',new ItemStack(Items.emerald),
-                's',new ItemStack(Items.stick)
-        );
-        GameRegistry.addRecipe(
-                new ItemStack(ModItems.emeraldPick),
-                "eee",
-                " s ",
-                " s ",
-
-                'e',new ItemStack(Items.emerald),
-                's',new ItemStack(Items.stick)
-        );
-        GameRegistry.addRecipe(
-                new ItemStack(ModItems.emeraldSpade),
-                "e","s","s",'e',new ItemStack(Items.emerald),'s',new ItemStack(Items.stick)
-        );
-        GameRegistry.addRecipe(
-                new ItemStack(ModItems.emeraldSword),
-                "e","e","s",'e',new ItemStack(Items.emerald),'s',new ItemStack(Items.stick)
-        );
-
+        GameRegistry.addShapelessRecipe(new ItemStack(Blocks.lapis_block, 9),new ItemStack(ModBlocks.denseLapis));
+        GameRegistry.addShapelessRecipe(new ItemStack(Blocks.coal_block, 9), new ItemStack(ModBlocks.denseCoal));
+        GameRegistry.addShapelessRecipe(new ItemStack(Blocks.quartz_block,9),new ItemStack(ModBlocks.denseQuartz));
+        GameRegistry.addShapelessRecipe(new ItemStack(Blocks.redstone_block,9),new ItemStack(ModBlocks.denseRedstone));
+        GameRegistry.addShapelessRecipe(new ItemStack(Blocks.iron_block,9),new ItemStack(ModBlocks.denseIron));
+        GameRegistry.addShapelessRecipe(new ItemStack(Blocks.diamond_block,9),new ItemStack(ModBlocks.denseDiamond));
+        GameRegistry.addShapelessRecipe(new ItemStack(Blocks.gold_block,9),new ItemStack(ModBlocks.denseGold));
+        GameRegistry.addShapelessRecipe(new ItemStack(Blocks.emerald_block,9),new ItemStack(ModBlocks.denseEmerald));
         /**
-         * Tools
+         *Armor
          */
-        GameRegistry.addRecipe(
-                new ItemStack(ModItems.emeraldArmorBoots),
+        GameRegistry.addRecipe(new ItemStack(ModItems.emeraldArmorBoots),
+                "e e",
+                "e e",'e',Items.emerald);
+        GameRegistry.addRecipe(new ItemStack(ModItems.emeraldArmorLegs),
                 "eee",
                 "e e",
-                "",
-                'e',new ItemStack(Items.emerald)
-        );
-        GameRegistry.addRecipe(
-                new ItemStack(ModItems.emeraldArmorChest),
+                "e e",'e',Items.emerald);
+        GameRegistry.addRecipe(new ItemStack(ModItems.emeraldArmorChest),
                 "e e",
                 "eee",
+                "eee",'e',Items.emerald);
+        GameRegistry.addRecipe(new ItemStack(ModItems.emeraldArmorHelm),
                 "eee",
-                'e',new ItemStack(Items.emerald)
-        );
-        GameRegistry.addRecipe(
-                new ItemStack(ModItems.emeraldArmorLegs),
-                "eee",
-                "e e",
-                "e e",
-                'e',new ItemStack(Items.emerald)
-        );
-        GameRegistry.addRecipe(
-                new ItemStack(ModItems.emeraldArmorBoots),
-                "e e",
-                "e e",
-                'e',new ItemStack(Items.emerald)
-        );
+                "e e",'e',Items.emerald);
 
-
-        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.denseCoal), new ItemStack(Blocks.coal_block, 9));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.denseDiamond), new ItemStack(Blocks.diamond_block, 9));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.denseEmerald), new ItemStack(Blocks.coal_block, 9));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.denseGold), new ItemStack(Blocks.coal_block, 9));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.denseIron), new ItemStack(Blocks.coal_block, 9));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.denseLapis), new ItemStack(Blocks.lapis_block, 9));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.denseQuartz), new ItemStack(Blocks.quartz_block, 9));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.denseRedstone), new ItemStack(Blocks.redstone_block, 9));
+        /*
+        TODO:
+        make relese for 1.7.10-1.4.1
+        close issues #1,2,3
+        fix random texture derp in build
+         */
 
     }
 }

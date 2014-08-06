@@ -1,6 +1,6 @@
 package com.jsmith.miscadd.item;
 
-import com.jsmith.miscadd.creativeTab.TabOther;
+import com.jsmith.miscadd.creativeTab.TabMA;
 import com.jsmith.miscadd.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -18,7 +18,7 @@ public class ItemEmeraldAxe extends ItemAxe
         super(material);
         this.setTextureName("EmeraldAxe");
         this.setUnlocalizedName("EmeraldAxe");
-        this.setCreativeTab(TabOther.MA_TAB2);
+        this.setCreativeTab(TabMA.MA_TAB2);
     }
     @Override
     public String getUnlocalizedName()

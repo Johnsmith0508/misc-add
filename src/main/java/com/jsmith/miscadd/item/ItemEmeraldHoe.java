@@ -1,6 +1,6 @@
 package com.jsmith.miscadd.item;
 
-import com.jsmith.miscadd.creativeTab.TabOther;
+import com.jsmith.miscadd.creativeTab.TabMA;
 import com.jsmith.miscadd.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -18,7 +18,7 @@ public class ItemEmeraldHoe extends ItemHoe
         super(material);
         this.setUnlocalizedName("EmeraldHoe");
         this.setTextureName("EmeraldHoe");
-        this.setCreativeTab(TabOther.MA_TAB2);
+        this.setCreativeTab(TabMA.MA_TAB2);
     }
 
     @Override

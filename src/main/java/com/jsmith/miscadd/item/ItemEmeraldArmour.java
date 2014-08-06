@@ -1,6 +1,6 @@
 package com.jsmith.miscadd.item;
 
-import com.jsmith.miscadd.creativeTab.TabOther;
+import com.jsmith.miscadd.creativeTab.TabMA;
 import com.jsmith.miscadd.reference.Reference;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
@@ -16,7 +16,7 @@ public class ItemEmeraldArmour extends ItemArmor
         super(material, armourType, armourType);
         this.setUnlocalizedName(Reference.RESOURCE_PREFIX+name);
         this.setTextureName(getUnlocalizedName().substring(5));
-        this.setCreativeTab(TabOther.MA_TAB2);
+        this.setCreativeTab(TabMA.MA_TAB2);
     }
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)

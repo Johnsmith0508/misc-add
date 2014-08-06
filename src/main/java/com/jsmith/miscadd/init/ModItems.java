@@ -17,6 +17,7 @@ public class ModItems {
     public static final ItemHoe emeraldHoe = new ItemEmeraldHoe(emeraldmaterial);
     public static final ItemSpade emeraldSpade = new ItemEmeraldSpade(emeraldmaterial);
     public static final ItemSword emeraldSword = new ItemEmeraldSword(emeraldmaterial);
+
     public static final ItemArmor emeraldArmorHelm = new ItemEmeraldArmour(emeraldArmorMaterial, 0,"emeraldHelm");
     public static final ItemArmor emeraldArmorChest = new ItemEmeraldArmour(emeraldArmorMaterial, 1,"emeraldChest");
     public static final ItemArmor emeraldArmorLegs = new ItemEmeraldArmour(emeraldArmorMaterial, 2,"emeraldLegs");
