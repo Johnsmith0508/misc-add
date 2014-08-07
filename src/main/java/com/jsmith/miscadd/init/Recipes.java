@@ -1,5 +1,6 @@
 package com.jsmith.miscadd.init;
 
+import com.jsmith.miscadd.handler.ConfigurationHandler;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -85,12 +86,13 @@ public class Recipes
                 "eee",
                 "e e",'e',Items.emerald);
 
-        /*
-        TODO:
-        make relese for 1.7.10-1.4.1
-        close issues #1,2,3
-        fix random texture derp in build
+        /**
+         * Config recipies
          */
+        if(ConfigurationHandler.quartz)
+        {
+            GameRegistry.addShapelessRecipe(new ItemStack(Items.quartz,4),new ItemStack(Blocks.quartz_block));
+        }
 
     }
 }

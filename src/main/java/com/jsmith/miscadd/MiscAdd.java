@@ -39,3 +39,15 @@ public class MiscAdd
 }
 
 }
+
+
+/**
+ * TODO
+ * localise
+ * armor overlay
+ * config:
+ *  usefull recipies
+ *      quartz
+ *      flesh to lether (machine)[wet lether through funrace = lether]
+ *      cobble + 8 slime = 1 clay
+ */
