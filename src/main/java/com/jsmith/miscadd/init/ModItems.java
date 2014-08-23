@@ -1,5 +1,6 @@
 package com.jsmith.miscadd.init;
 
+import com.jsmith.miscadd.handler.ConfigurationHandler;
 import com.jsmith.miscadd.item.*;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.*;
@@ -37,6 +38,9 @@ public class ModItems {
     public static final ItemArmor lapisArmorLegs = new ItemLapisArmor(lapisArmorMaterial, 2,"lapisLegs");
     public static final ItemArmor lapisArmorBoots = new ItemLapisArmor(lapisArmorMaterial, 3,"lapisBoots");
 
+    public static final ItemMA dampLeather = new ItemDampLeather();
+    public static final ItemMA steelIngot = new ItemSteel();
+
 
     public static void init()
     {
@@ -61,6 +65,9 @@ public class ModItems {
         GameRegistry.registerItem(lapisPick,"lapisPick");
         GameRegistry.registerItem(lapisSpade,"lapisSpade");
         GameRegistry.registerItem(lapisSword,"lapisSword8");
+
+        GameRegistry.registerItem(dampLeather, "dampLeather");
+        GameRegistry.registerItem(steelIngot,"SteelIngot");
 
 
     }

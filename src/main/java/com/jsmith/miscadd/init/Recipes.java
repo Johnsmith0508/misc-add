@@ -93,6 +93,11 @@ public class Recipes
         {
             GameRegistry.addShapelessRecipe(new ItemStack(Items.quartz,4),new ItemStack(Blocks.quartz_block));
         }
+        if(ConfigurationHandler.flesh)
+        {
+            GameRegistry.addRecipe(new ItemStack(ModItems.dampLeather), "fff", "fff", "fff", 'f', Items.rotten_flesh);
+            GameRegistry.addSmelting(new ItemStack(ModItems.dampLeather),new ItemStack(Items.leather),1.0f);
+        }
 
     }
 }

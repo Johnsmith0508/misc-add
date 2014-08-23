@@ -10,4 +10,6 @@ public class Reference
     public static final String VERSION = "1.0";
     public static final String RESOURCE_PREFIX = Reference.MOD_ID.toLowerCase() + ":";
     public static final String GUI_FACTORY_CLASS = "com.jsmith.miscadd.client.gui.GuiFactory";
+    public static final String SERVER_PROXY_CLASS = "com.jsmith.miscadd.proxy.ServerProxy";
+    public static final String CLIENT_PROXY_CLASS = "com.jsmith.miscadd.proxy.ClientProxy";
 }

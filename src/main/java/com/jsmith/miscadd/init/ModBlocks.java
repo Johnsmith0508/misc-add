@@ -16,6 +16,7 @@ public class ModBlocks
     public static final BlockMA denseLapis = new BlockDenseLapis();
     public static final BlockMA denseRedstone = new BlockDenseRedstone();
     public static final BlockMA denseQuartz = new BlockDenseQuartz();
+    public static final BlockMA steelBlock = new BlockSteel();
 
     public static void init()
     {
@@ -27,6 +28,8 @@ public class ModBlocks
         GameRegistry.registerBlock(denseLapis, "DenseLapis");
         GameRegistry.registerBlock(denseRedstone, "DenseRedstone");
         GameRegistry.registerBlock(denseQuartz, "DenseQuartz");
+        GameRegistry.registerBlock(steelBlock, "SteelBlock");
+
 
     }
 }

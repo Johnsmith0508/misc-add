@@ -18,3 +18,7 @@ item.miscadd:emeraldHelm.name=Emerald Helm
 item.miscadd:emeraldChest.name=Emerald Chestplate
 item.miscadd:emeraldLegs.name=Emerald Leggings
 item.miscadd:emeraldBoots.name=Emerald Boots
+
+keys.miscadd.category=Misc - Add
+keys.miscadd.charge=Charge
+keys.miscadd.release=Release

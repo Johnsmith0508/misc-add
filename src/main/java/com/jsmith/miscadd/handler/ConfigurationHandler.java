@@ -15,6 +15,7 @@ public class ConfigurationHandler
     public static Configuration configuration;
     public static boolean testValue = false;
     public static boolean quartz;
+    public static boolean flesh;
 
     public static void init(File configFile)
     {
@@ -30,6 +31,7 @@ public class ConfigurationHandler
     {
         testValue = configuration.getBoolean("configValue", Configuration.CATEGORY_GENERAL, false, "This is an example configuration value");
         quartz = configuration.getBoolean("quartzStorage","Game Enhancements",false,"Can you uncraft quartz blocks?");
+        flesh = configuration.getBoolean("FleshToLeather","Game Enhancements", true,"Can you craft leather from smelting damp leather?");
 
         if (configuration.hasChanged())
         {
