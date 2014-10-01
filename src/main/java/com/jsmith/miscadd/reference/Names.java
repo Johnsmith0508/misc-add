@@ -11,4 +11,9 @@ public final class Names
         public static final String CHARGE = "keys.miscadd.charge";
         public static final String RELEASE = "keys.miscadd.release";
     }
+
+    public static final class ConfigCategory
+    {
+        public static final String ENHANCEMENTS = "Game Enhancements";
+    }
 }

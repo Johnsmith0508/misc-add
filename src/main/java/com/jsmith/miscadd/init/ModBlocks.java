@@ -2,12 +2,17 @@ package com.jsmith.miscadd.init;
 
 import com.jsmith.miscadd.block.*;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.MapColor;
+import net.minecraft.block.material.Material;
 
 /**
  * Created by JohnSmith0508 on 3/8/14 at 2:10 PM.
  */
 public class ModBlocks
 {
+    public static final Material glassMaterial = new Material(MapColor.airColor);
+
     public static final BlockMA denseIron = new BlockDenseIron();
     public static final BlockMA denseDiamond = new BlockDenseDiamond();
     public static final BlockMA denseGold = new BlockDenseGold();
@@ -17,6 +22,9 @@ public class ModBlocks
     public static final BlockMA denseRedstone = new BlockDenseRedstone();
     public static final BlockMA denseQuartz = new BlockDenseQuartz();
     public static final BlockMA steelBlock = new BlockSteel();
+    public static final Block chest = new BlockTestVChest(2);
+    public static final Block opaqueGlass = new BlockOpaqueGlass(glassMaterial, false);
+    public static final Block wutGlass = new BlockClearGlass(glassMaterial, false);
 
     public static void init()
     {
@@ -29,6 +37,9 @@ public class ModBlocks
         GameRegistry.registerBlock(denseRedstone, "DenseRedstone");
         GameRegistry.registerBlock(denseQuartz, "DenseQuartz");
         GameRegistry.registerBlock(steelBlock, "SteelBlock");
+        GameRegistry.registerBlock(chest, "TestChest");
+        GameRegistry.registerBlock(opaqueGlass, "OpaqueGlass");
+        GameRegistry.registerBlock(wutGlass, "WutGlass");
 
 
     }

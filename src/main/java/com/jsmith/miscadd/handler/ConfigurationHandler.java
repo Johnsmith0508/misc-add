@@ -1,5 +1,6 @@
 package com.jsmith.miscadd.handler;
 
+import com.jsmith.miscadd.reference.Names;
 import com.jsmith.miscadd.reference.Reference;
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -17,6 +18,7 @@ public class ConfigurationHandler
     public static boolean quartz;
     public static boolean flesh;
 
+
     public static void init(File configFile)
     {
         // Create the configuration object from the given configuration file
@@ -30,8 +32,9 @@ public class ConfigurationHandler
     private static void loadConfiguration()
     {
         testValue = configuration.getBoolean("configValue", Configuration.CATEGORY_GENERAL, false, "This is an example configuration value");
-        quartz = configuration.getBoolean("quartzStorage","Game Enhancements",false,"Can you uncraft quartz blocks?");
-        flesh = configuration.getBoolean("FleshToLeather","Game Enhancements", true,"Can you craft leather from smelting damp leather?");
+        quartz = configuration.getBoolean("quartzStorage", Names.ConfigCategory.ENHANCEMENTS,false,"Can you uncraft quartz blocks?");
+        flesh = configuration.getBoolean("FleshToLeather",Names.ConfigCategory.ENHANCEMENTS, true,"Can you craft leather from smelting damp leather?");
+
 
         if (configuration.hasChanged())
         {

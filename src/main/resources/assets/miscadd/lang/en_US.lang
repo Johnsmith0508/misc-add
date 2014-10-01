@@ -1,3 +1,4 @@
+# Dense Blocks #
 tile.miscadd:DenseCoal.name=Dense Coal Block
 tile.miscadd:DenseDiamond.name=Dense Diamond Block
 tile.miscadd:DenseEmerald.name=Dense Emerald Block
@@ -7,18 +8,29 @@ tile.miscadd:DenseLapis.name=Dense Lapis Lazuli Block
 tile.miscadd:DenseQuartz.name=Dense Quartz Block
 tile.miscadd:DenseRedstone.name=Dense Redstone Block
 
-
+# Emerald Tools #
 item.miscadd:EmeraldShovel.name=Emerald Shovel
 item.miscadd:EmeraldSword.name=Emerald Sword
 item.miscadd:EmeraldHoe.name=Emerald Hoe
 item.miscadd:EmeraldAxe.name=Emerald Axe
 item.miscadd:EmeraldPick.name=Emerald Pickaxe
 
+# Emerald Armor
 item.miscadd:emeraldHelm.name=Emerald Helm
 item.miscadd:emeraldChest.name=Emerald Chestplate
 item.miscadd:emeraldLegs.name=Emerald Leggings
 item.miscadd:emeraldBoots.name=Emerald Boots
 
+# Lapis Armor #
+item.miscadd:lapisHelm.name=Lapis Helm
+item.miscadd:lapisChest.name=Lapis Chestplate
+item.miscadd:lapisLegs.name=Lapis Leggings
+item.miscadd.lapisBoots.name=Lapis Boots
+
+# Lapis Tools #
+iem
+
+# Keybinds #
 keys.miscadd.category=Misc - Add
 keys.miscadd.charge=Charge
 keys.miscadd.release=Release

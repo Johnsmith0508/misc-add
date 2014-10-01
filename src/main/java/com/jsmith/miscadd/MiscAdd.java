@@ -13,15 +13,13 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.common.config.Configuration;
-
-import java.sql.Ref;
 
 
 /**
  * Created by JohnSmith0508 on 3/8/14 at 12:07 PM.
  */
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
+
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class MiscAdd
 {
 @Mod.Instance(Reference.MOD_ID)
@@ -61,7 +59,7 @@ public static IProxy proxy;
 
 /**
  * TODO
- * localise
+ * FUCKING localise
  * armor overlay
  * config:
  *  usefull recipies
