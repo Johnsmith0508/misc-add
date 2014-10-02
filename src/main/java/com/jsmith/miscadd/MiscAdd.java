@@ -59,6 +59,10 @@ public static IProxy proxy;
 
 /**
  * TODO
+ * add floor of some sort for 3d crafter
+ * decide a shape for said multi block
+ * FUCKING localise
+ * FUCKING localise
  * FUCKING localise
  * armor overlay
  * config:
