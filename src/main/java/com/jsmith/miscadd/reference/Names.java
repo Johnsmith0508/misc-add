@@ -14,6 +14,6 @@ public final class Names
 
     public static final class ConfigCategory
     {
-        public static final String ENHANCEMENTS = "Game Enhancements";
+        public static final String ENHANCEMENTS = "game enhancements";
     }
 }

@@ -1,5 +1,6 @@
-package com.jsmith.miscadd.block;
+package com.jsmith.miscadd.block.masterPlan;
 
+import com.jsmith.miscadd.block.BlockMA;
 import net.minecraft.block.material.Material;
 
 /**

@@ -1,6 +1,8 @@
 package com.jsmith.miscadd.init;
 
 import com.jsmith.miscadd.block.*;
+import com.jsmith.miscadd.block.dense.*;
+import com.jsmith.miscadd.block.masterPlan.*;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
@@ -21,6 +23,7 @@ public class ModBlocks
     public static final BlockMA denseLapis = new BlockDenseLapis();
     public static final BlockMA denseRedstone = new BlockDenseRedstone();
     public static final BlockMA denseQuartz = new BlockDenseQuartz();
+    public static final BlockMA denseObsidian = new BlockDenseObsidian();
     public static final BlockMA steelBlock = new BlockSteel();
     public static final BlockMA multiBlockCase = new BlockMultiCase();
     public static final Block chest = new BlockTestVChest(2);
@@ -41,7 +44,8 @@ public class ModBlocks
         GameRegistry.registerBlock(chest, "TestChest");
         GameRegistry.registerBlock(opaqueGlass, "OpaqueGlass");
         GameRegistry.registerBlock(wutGlass, "WutGlass");
-        //TODO comment this out before releasing v1.5
+        GameRegistry.registerBlock(denseObsidian, "DenseObsinain");
+        //TODO comment next two lines out before releasing v1.5
         GameRegistry.registerBlock(multiBlockCase, "MultiBlockCase");
 
 

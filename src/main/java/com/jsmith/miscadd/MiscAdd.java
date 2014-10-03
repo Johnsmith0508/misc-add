@@ -53,14 +53,16 @@ public static IProxy proxy;
 {
     LogHelper.info("PostInit Complete");
 }
-
 }
 
 
 /**
  * TODO
- * add floor of some sort for 3d crafter
  * decide a shape for said multi block
+ * finish/start 3d crafting shit
+ * move said shit to diffrent mod
+ * create core mod to help w/ handeling
+ * create in world frame using 3d crafting (one block)
  * FUCKING localise
  * FUCKING localise
  * FUCKING localise
@@ -68,6 +70,5 @@ public static IProxy proxy;
  * config:
  *  usefull recipies
  *      quartz
- *      flesh to lether (machine)[wet lether through funrace = lether]
  *      cobble + 8 slime = 1 clay
  */
