@@ -15,6 +15,8 @@ public class ItemPopcorn extends ItemFood
     public ItemPopcorn(int heal, float saturation, boolean wolfMeat)
     {
         super(heal,saturation,wolfMeat);
+        this.setUnlocalizedName("Popcorn");
+        this.setTextureName("popcorn");
     }
     @Override
     public String getUnlocalizedName()

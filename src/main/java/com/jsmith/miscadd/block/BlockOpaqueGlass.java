@@ -21,6 +21,7 @@ public class BlockOpaqueGlass extends BlockGlass
         this.setCreativeTab(TabMA.MA_TAB);
         this.setHarvestLevel("pickaxe",1);
         this.setHardness(1);
+        this.setStepSound(soundTypeGlass);
     }
 
     @Override

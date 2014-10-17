@@ -25,12 +25,23 @@ item.miscadd:emeraldBoots.name=Emerald Boots
 item.miscadd:lapisHelm.name=Lapis Helm
 item.miscadd:lapisChest.name=Lapis Chestplate
 item.miscadd:lapisLegs.name=Lapis Leggings
-item.miscadd.lapisBoots.name=Lapis Boots
+item.miscadd:lapisBoots.name=Lapis Boots
 
 # Lapis Tools #
-iem
+item.miscadd:LapisShovel.name=Emerald Shovel
+item.miscadd:LapisSword.name=Emerald Sword
+item.miscadd:LapisHoe.name=Emerald Hoe
+item.miscadd:LapisAxe.name=Emerald Axe
+item.miscadd:LapisPick.name=Emerald Pickaxe
 
 # Keybinds #
 keys.miscadd.category=Misc - Add
 keys.miscadd.charge=Charge
 keys.miscadd.release=Release
+
+# misc #
+tile.miscadd:SteelBlock.name=Steel Block
+tile.miscadd:OpaqueGlass.name=Opaque Glass
+tile.miscadd:wutGlass.name=Clear Glass
+item.miscadd:DampLeather.name=Damp Leather
+item.miscadd:ItemSteel.name=Steel Ingot

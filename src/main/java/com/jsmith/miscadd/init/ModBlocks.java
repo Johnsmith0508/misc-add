@@ -25,8 +25,8 @@ public class ModBlocks
     public static final BlockMA denseQuartz = new BlockDenseQuartz();
     public static final BlockMA denseObsidian = new BlockDenseObsidian();
     public static final BlockMA steelBlock = new BlockSteel();
-    public static final BlockMA multiBlockCase = new BlockMultiCase();
-    public static final BlockMA steelPlate = new BLockSteelPlate();
+    //public static final BlockMA multiBlockCase = new BlockMultiCase();
+    //public static final BlockMA steelPlate = new BLockSteelPlate();
     public static final Block chest = new BlockTestVChest(2);
     public static final Block opaqueGlass = new BlockOpaqueGlass(glassMaterial, false);
     public static final Block wutGlass = new BlockClearGlass(glassMaterial, false);
@@ -46,9 +46,8 @@ public class ModBlocks
         GameRegistry.registerBlock(opaqueGlass, "OpaqueGlass");
         GameRegistry.registerBlock(wutGlass, "WutGlass");
         GameRegistry.registerBlock(denseObsidian, "DenseObsidian");
-        //TODO comment next two lines out before releasing v1.5
-        GameRegistry.registerBlock(multiBlockCase, "MultiBlockCase");
-        GameRegistry.registerBlock(steelPlate,"SteelPlate");
+        //GameRegistry.registerBlock(multiBlockCase, "MultiBlockCase");
+        //GameRegistry.registerBlock(steelPlate,"SteelPlate");
 
 
     }
