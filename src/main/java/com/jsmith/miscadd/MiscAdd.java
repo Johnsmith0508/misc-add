@@ -67,8 +67,4 @@ public static IProxy proxy;
  * FUCKING localise
  * FUCKING localise
  * armor overlay
- * config:
- *  usefull recipies
- *      quartz
- *      cobble + 8 slime = 1 clay
  */
