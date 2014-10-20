@@ -10,7 +10,7 @@ public class BlockClearGlass extends BlockOpaqueGlass
     public BlockClearGlass(Material material, Boolean bool)
     {
         super(material, bool);
-        this.setBlockTextureName("wutlass");
-        this.setBlockName("wutGlass");
+        this.setBlockTextureName("claer_glass");
+        this.setBlockName("clear_glass");
     }
 }

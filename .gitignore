@@ -1,8 +1,9 @@
 eclipse/*
-forge.ipr
-forge.iws
-forge.iml
+*.ipr
+*.iws
+*.iml
 *credits*.txt
 readme.txt
 *license*.txt
 *changelog.txt
+out/*

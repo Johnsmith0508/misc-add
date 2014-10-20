@@ -1,23 +1,47 @@
 package com.jsmith.miscadd.item;
 
+import com.jsmith.miscadd.creativeTab.TabMA;
 import com.jsmith.miscadd.reference.Reference;
+import com.jsmith.miscadd.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.world.World;
 
 /**
  * Created by JohnSmith0508 on 3/10/14 at 10:45 PM.
  */
 public class ItemPopcorn extends ItemFood
 {
-    public ItemPopcorn(int heal, float saturation, boolean wolfMeat)
+    public ItemPopcorn(int heal, float saturation)
     {
-        super(heal,saturation,wolfMeat);
+        super(heal,saturation,false);
         this.setUnlocalizedName("Popcorn");
         this.setTextureName("popcorn");
+        this.setCreativeTab(TabMA.MA_TAB2);
+        this.setMaxStackSize(1);
     }
+
+    /*@Override
+    public ItemStack onEaten(ItemStack itemStack, World world, EntityPlayer player)
+    {
+        if (!player.capabilities.isCreativeMode)
+        {
+            --itemStack.stackSize;
+        }
+        if (!world.isRemote)
+        {
+            LogHelper.info("Nope, not remote");
+        }
+        return itemStack.stackSize <= 0 ? new ItemStack(Items.bucket) : itemStack;
+    }*/
+
     @Override
     public String getUnlocalizedName()
     {

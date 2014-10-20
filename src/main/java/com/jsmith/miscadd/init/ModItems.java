@@ -40,7 +40,8 @@ public class ModItems {
 
     public static final ItemMA dampLeather = new ItemDampLeather();
     public static final ItemMA steelIngot = new ItemSteel();
-    public static final ItemFood popcorn = new ItemPopcorn(5,7,true);
+    public static final ItemFood popcorn = new ItemPopcorn(5,7);
+    public static final ItemMA chancer = new ItemFiftyFifty();
 
 
     public static void init()
@@ -70,6 +71,7 @@ public class ModItems {
         GameRegistry.registerItem(dampLeather, "dampLeather");
         GameRegistry.registerItem(steelIngot,"SteelIngot");
         GameRegistry.registerItem(popcorn,"Popcorn");
+        GameRegistry.registerItem(chancer,"Chancer");
 
 
     }
