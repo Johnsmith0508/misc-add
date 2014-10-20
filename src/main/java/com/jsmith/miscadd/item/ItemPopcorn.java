@@ -23,25 +23,20 @@ public class ItemPopcorn extends ItemFood
     {
         super(heal,saturation,false);
         this.setUnlocalizedName("Popcorn");
-        this.setTextureName("popcorn");
+        this.setTextureName("Popcorn");
         this.setCreativeTab(TabMA.MA_TAB2);
         this.setMaxStackSize(1);
     }
 
-    /*@Override
-    public ItemStack onEaten(ItemStack itemStack, World world, EntityPlayer player)
-    {
-        if (!player.capabilities.isCreativeMode)
-        {
+    @Override
+    public ItemStack onEaten(ItemStack itemStack, World world, EntityPlayer player) {
+        if (!player.capabilities.isCreativeMode) {
             --itemStack.stackSize;
+            player.inventory.addItemStackToInventory(new ItemStack(Items.bucket, 1));
         }
-        if (!world.isRemote)
-        {
-            LogHelper.info("Nope, not remote");
-        }
-        return itemStack.stackSize <= 0 ? new ItemStack(Items.bucket) : itemStack;
-    }*/
-
+        player.destroyCurrentEquippedItem();
+        return null;
+    }
     @Override
     public String getUnlocalizedName()
     {

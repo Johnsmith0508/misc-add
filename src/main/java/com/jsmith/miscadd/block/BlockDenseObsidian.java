@@ -10,8 +10,9 @@ public class BlockDenseObsidian extends BlockMA
     public BlockDenseObsidian()
     {
         super(Material.iron);
-        this.setBlockName("DenseOblsidian");
+        this.setBlockName("DenseObsidian");
         this.setStepSound(soundTypeMetal);
         this.setBlockTextureName("DenseObsidian");
+        this.setHardness(9000);
     }
 }

@@ -1,5 +1,8 @@
 package com.jsmith.miscadd.item;
 
+import com.jsmith.miscadd.creativeTab.TabMA;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -19,6 +22,8 @@ public class ItemFiftyFifty extends ItemMA
         super();
         this.setUnlocalizedName("Chancer");
         this.setTextureName("Chancer");
+        this.setCreativeTab(TabMA.MA_TAB2);
+        this.setMaxStackSize(1);
     }
 
     @Override
@@ -27,21 +32,23 @@ public class ItemFiftyFifty extends ItemMA
     }
 
     @Override
+    @SideOnly(Side.CLIENT)
+    public boolean hasEffect(ItemStack par1ItemStack, int pass) {
+        return true;
+    }
+
+    @Override
     public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) {
         if(new Random().nextBoolean())
         {
             player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id,600,5));
             player.addPotionEffect(new PotionEffect(Potion.jump.id,600,5));
-        }else
-        {
-            player.addPotionEffect(new PotionEffect(Potion.harm.id,60,5));
         }
+        else {player.addPotionEffect(new PotionEffect(Potion.harm.id,60,5));}
+        if(!player.capabilities.isCreativeMode) {player.destroyCurrentEquippedItem();}
         return super.onItemRightClick(itemStack, world, player);
     }
 
-    @Override
-    public boolean hasEffect(ItemStack p_77636_1_) {
-        return true;
-    }
+
 
 }

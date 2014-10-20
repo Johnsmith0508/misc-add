@@ -29,7 +29,7 @@ public class TabMA
     public static final CreativeTabs MA_TAB2 = new CreativeTabs(Reference.MOD_ID + "2") {
         @Override
         public Item getTabIconItem() {
-            return ModItems.emeraldPick;
+            return ModItems.chancer;
         }
         @Override
         @SideOnly(Side.CLIENT)
