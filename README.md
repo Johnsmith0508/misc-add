@@ -13,6 +13,5 @@ git clone
 now located at the [wiki](https://github.com/Johnsmith0508/misc-add/wiki)
 
 
-for example:
- to make a dense iron block, one would fill the crafting bench with iron blocks
+
 ![](https://github.com/johnsmith0508/misc-add/raw/master/ReadmeFolder/DenseBlock.png)
