@@ -10,13 +10,7 @@ git clone
 ```
 ## Recipes
 
-Dense Blocks:
-```
-III
-III
-III
-```
-Whare I is the block of in question
+now located at the [wiki](https://github.com/Johnsmith0508/misc-add/wiki)
 
 
 for example:
