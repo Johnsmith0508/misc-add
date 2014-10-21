@@ -1,6 +1,7 @@
 package com.jsmith.miscadd.item;
 
 import com.jsmith.miscadd.creativeTab.TabMA;
+import com.jsmith.miscadd.init.ModItems;
 import com.jsmith.miscadd.reference.Reference;
 import com.jsmith.miscadd.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
@@ -27,35 +28,29 @@ public class ItemPopcorn extends ItemFood
         this.setCreativeTab(TabMA.MA_TAB2);
         this.setMaxStackSize(1);
     }
-
     @Override
     public ItemStack onEaten(ItemStack itemStack, World world, EntityPlayer player) {
-        if (!player.capabilities.isCreativeMode) {
-            --itemStack.stackSize;
-            player.inventory.addItemStackToInventory(new ItemStack(Items.bucket, 1));
-        }
         player.destroyCurrentEquippedItem();
-        return null;
+        player.inventory.addItemStackToInventory(new ItemStack(Items.bucket, 1));
+        //--itemStack.stackSize;
+        return super.onEaten(itemStack, world, player);
     }
     @Override
     public String getUnlocalizedName()
     {
         return String.format("item.%s%s", Reference.RESOURCE_PREFIX, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
-
     @Override
     public String getUnlocalizedName(ItemStack itemStack)
     {
         return String.format("item.%s%s", Reference.RESOURCE_PREFIX, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
-
     @Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconRegister)
     {
         itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
     }
-
     protected String getUnwrappedUnlocalizedName(String unlocalizedName)
     {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
