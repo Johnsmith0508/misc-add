@@ -4,7 +4,7 @@ misc-add
 a minecraft mod
 
 ##Inforamtion
-if you want to submit an issue, read [this](https://github.com/Johnsmith0508/misc-add/wiki/Guidelines-for-submiting-an-issue) first. if you feel confidant enough to write a properly formated issue report, i _guess_ you can click [here](https://github.com/Johnsmith0508/misc-add/issues)
+if you want to submit an issue, read [the guidelines](https://github.com/Johnsmith0508/misc-add/wiki/Guidelines-for-submiting-an-issue) on submiting an issue first. if you feel confident enough to write a properly formated issue report, i _guess_ you can go to  [the bug tracker](https://github.com/Johnsmith0508/misc-add/issues)
 ```bash
 git clone 
 ```
