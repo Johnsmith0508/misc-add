@@ -59,17 +59,15 @@ public class MiscAdd {
     public void serverLoad(FMLServerStartingEvent event) {
         event.registerServerCommand(new CommandGM());
     }
+    public static final boolean IS_LOADED(){return true;}
+    public static final boolean IS_LOADED = true;
 }
 
 /**
  * TODO
- * decide a shape for said multi block
  * finish/start 3d crafting shit
  * move said shit to diffrent mod
  * create core mod to help w/ handeling
  * create in world frame using 3d crafting (one block)
- * FUCKING localise
- * FUCKING localise
- * FUCKING localise
  * armor overlay
  */

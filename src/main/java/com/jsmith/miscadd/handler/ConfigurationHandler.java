@@ -17,6 +17,7 @@ public class ConfigurationHandler
     public static boolean testValue = false;
     public static boolean quartz;
     public static boolean flesh;
+    public static boolean obsidian;
 
 
     public static void init(File configFile)
@@ -34,6 +35,7 @@ public class ConfigurationHandler
         testValue = configuration.getBoolean("configValue", Configuration.CATEGORY_GENERAL, false, "This is an example configuration value");
         quartz = configuration.getBoolean("quartzStorage", Names.ConfigCategory.ENHANCEMENTS,false,"Can you uncraft quartz blocks?");
         flesh = configuration.getBoolean("FleshToLeather",Names.ConfigCategory.ENHANCEMENTS, true,"Can you craft leather from smelting damp leather?");
+        obsidian=configuration.getBoolean("UnbreakableDenseObsidian",Configuration.CATEGORY_GENERAL,true,"Is dense obsidian unbreakable in survival mode :WARNING: it si suggested fot this to be turned off on multplayer servers");
 
 
         if (configuration.hasChanged())

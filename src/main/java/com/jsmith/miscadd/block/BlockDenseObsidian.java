@@ -1,5 +1,6 @@
 package com.jsmith.miscadd.block;
 
+import com.jsmith.miscadd.handler.ConfigurationHandler;
 import net.minecraft.block.material.Material;
 
 /**
@@ -13,6 +14,12 @@ public class BlockDenseObsidian extends BlockMA
         this.setBlockName("DenseObsidian");
         this.setStepSound(soundTypeMetal);
         this.setBlockTextureName("DenseObsidian");
-        this.setHardness(9000);
+        if(ConfigurationHandler.obsidian)
+        {
+            this.setHardness(9000);
+        }else
+        {
+            this.setHardness(51);
+        }
     }
 }
