@@ -1,5 +1,5 @@
 [![Stories in Ready](https://badge.waffle.io/Johnsmith0508/misc-add.png?label=ready&title=Ready)](https://waffle.io/Johnsmith0508/misc-add)
-misc-add [![Build Status](https://travis-ci.org/Johnsmith0508/misc-add.svg?branch=master)](https://travis-ci.org/Johnsmith0508/misc-add)[![Stories in Ready](https://badge.waffle.io/Johnsmith0508/misc-add.png?label=ready&title=Ready)](https://waffle.io/Johnsmith0508/misc-add)
+misc-add [![Build Status](https://travis-ci.org/Johnsmith0508/misc-add.svg?branch=master)](https://travis-ci.org/Johnsmith0508/misc-add)  [![Stories in Ready](https://badge.waffle.io/Johnsmith0508/misc-add.png?label=ready&title=Ready)](https://waffle.io/Johnsmith0508/misc-add)
 ========
 
 a minecraft mod
