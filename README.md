@@ -1,4 +1,6 @@
-misc-add [![Build Status](https://travis-ci.org/Johnsmith0508/misc-add.svg?branch=master)](https://travis-ci.org/Johnsmith0508/misc-add)  [![Stories in Ready](https://badge.waffle.io/Johnsmith0508/misc-add.png?label=ready&title=Ready)](https://waffle.io/Johnsmith0508/misc-add)
+[![Build Status](https://travis-ci.org/Johnsmith0508/misc-add.svg?branch=master)](https://travis-ci.org/Johnsmith0508/misc-add)
+[![Stories in Ready](https://badge.waffle.io/Johnsmith0508/misc-add.png?label=ready&title=Ready)](https://waffle.io/Johnsmith0508/misc-add)
+misc-add
 ========
 
 a minecraft mod
@@ -18,3 +20,5 @@ most modpacks require permisions from the author in order to include them in a p
 
 
 ![](https://github.com/johnsmith0508/misc-add/raw/master/ReadmeFolder/DenseBlock.png)
+
+[![Throughput Graph](https://graphs.waffle.io/johnsmith0508/misc-add/throughput.svg)](https://waffle.io/johnsmith0508/misc-add/metrics)
