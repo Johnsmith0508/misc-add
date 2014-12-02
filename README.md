@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/Johnsmith0508/misc-add.svg?branch=master)](https://travis-ci.org/Johnsmith0508/misc-add)
 [![Stories in Ready](https://badge.waffle.io/Johnsmith0508/misc-add.png?label=ready&title=Ready)](https://waffle.io/Johnsmith0508/misc-add)
+[![Version](http://img.shields.io/badge/Version-1.4.1-green.svg)](https://github.com/Johnsmith0508/misc-add/releases/latest)
 misc-add
 ========
 
