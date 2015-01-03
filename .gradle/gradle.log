@@ -10,13 +10,13 @@ The assetDir is deprecated!  Use runDir instead! runDir set to eclipse/assets/..
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava UP-TO-DATE
+:sourceMainJava
 :compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
-Note: /Users/Logan/Desktop/Github/misc-add/build/sources/java/com/jsmith/miscadd/client/gui/ModGuiConfig.java uses unchecked or unsafe operations.
+Note: /Users/Logan/misc-add/build/sources/java/com/jsmith/miscadd/client/gui/ModGuiConfig.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 1 warning
 
-:processResources UP-TO-DATE
+:processResources
 :classes
 :jar
 :compileTestJava UP-TO-DATE
@@ -31,7 +31,11 @@ Note: Recompile with -Xlint:unchecked for details.
 :assemble
 :check UP-TO-DATE
 :build
+:ideaModule
+:ideaProject
+:ideaWorkspace
+:idea
 
 BUILD SUCCESSFUL
 
-Total time: 35.661 secs
+Total time: 37.634 secs

@@ -54,11 +54,6 @@ public class MiscAdd {
         LogHelper.info("PostInit Complete");
     }
 
-
-    @Mod.EventHandler
-    public void serverLoad(FMLServerStartingEvent event) {
-        event.registerServerCommand(new CommandGM());
-    }
     public static final boolean IS_LOADED(){return true;}
     public static final boolean IS_LOADED = true;
 }
