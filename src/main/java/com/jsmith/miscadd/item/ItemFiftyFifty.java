@@ -10,6 +10,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -49,6 +50,13 @@ public class ItemFiftyFifty extends ItemMA
         return super.onItemRightClick(itemStack, world, player);
     }
 
+    @Override
+    public void addInformation(ItemStack itemStack, EntityPlayer player, List tooltip, boolean advanced)
+    {
+        tooltip.add("Mystical Item, Seems");
+        tooltip.add("to effect the user with extreme");
+        tooltip.add("speed, but with deadly consequences");
+    }
 
 
 }
