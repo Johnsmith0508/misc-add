@@ -59,10 +59,12 @@ public class MiscAdd {
 }
 
 /**
- * TODO
- * finish/start 3d crafting shit
- * move said shit to diffrent mod
- * create core mod to help w/ handeling
- * create in world frame using 3d crafting (one block)
- * armor overlay
+ * TODO compressed stone
+ * TODO finish/start 3d crafting shit
+ * TODO move said shit to diffrent mod
+ * TODO create core mod to help w/ handeling
+ * TODO create in world frame using 3d crafting (one block)
+ * TODO armor overlay
+ * TODO diamond bucket water + lava = stone
+ * TODO diamond bucket lava + water = obsidian
  */

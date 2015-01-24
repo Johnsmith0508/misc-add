@@ -3,6 +3,7 @@ package com.jsmith.miscadd.init;
 import com.jsmith.miscadd.handler.ConfigurationHandler;
 import com.jsmith.miscadd.item.*;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.*;
 import net.minecraftforge.common.util.EnumHelper;
 
@@ -43,6 +44,10 @@ public class ModItems {
     public static final ItemFood popcorn = new ItemPopcorn(5,7);
     public static final ItemMA chancer = new ItemFiftyFifty();
 
+    public static final ItemMA diamondBucket = new ItemDiamondBucket(Blocks.air,0);
+    public static final ItemMA diamondLavaBucket = new ItemDiamondBucket(Blocks.lava,2);
+    public static final ItemMA diamondWaterBucket = new ItemDiamondBucket(Blocks.water,1);
+
 
     public static void init()
     {
@@ -72,6 +77,10 @@ public class ModItems {
         GameRegistry.registerItem(steelIngot,"SteelIngot");
         GameRegistry.registerItem(popcorn,"Popcorn");
         GameRegistry.registerItem(chancer,"Chancer");
+
+        GameRegistry.registerItem(diamondBucket,"DiamondBucket");
+        GameRegistry.registerItem(diamondLavaBucket,"DiamondLavaBucket");
+        GameRegistry.registerItem(diamondWaterBucket,"DiamondWaterBucket");
 
 
     }
