@@ -7,7 +7,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.MovingObjectPosition;
@@ -25,7 +24,7 @@ public class ItemDiamondBucket extends ItemMA
     /**
      *
      * @param block what block is placed on rightclick
-     * @param contents 0 - empty; 1 - water; 2 - lava
+     * @param contents 0 - empty; 1 - water; 2 - lava; 3 - 1/2 water; 4 - 1/2 lava; 5 - stone; 6 - obsidian
      */
     public ItemDiamondBucket(Block block, int contents)
     {
@@ -34,10 +33,6 @@ public class ItemDiamondBucket extends ItemMA
         this.isFull = block;
         switch (contents)
         {
-            case 0:
-                this.setUnlocalizedName("diamondBucket");
-                this.setTextureName("diamondBucket");
-                break;
             case 1:
                 this.setUnlocalizedName("diamondWaterBucket");
                 this.setTextureName("diamondWaterBucket");
@@ -45,6 +40,29 @@ public class ItemDiamondBucket extends ItemMA
             case 2:
                 this.setUnlocalizedName("diamondLavaBucket");
                 this.setTextureName("diamondLavaBucket");
+                break;
+            case 3:
+                this.setUnlocalizedName("diamondWaterBucketHalf");
+                this.setTextureName("diamondWaterBucketHalf");
+                break;
+            case 4:
+                this.setUnlocalizedName("diamondLavaBucketHalf");
+                this.setTextureName("diamondLavaBucketHalf");
+                break;
+            case 5:
+                this.setUnlocalizedName("diamondStoneBucket");
+                this.setTextureName("diamondStoneBucket");
+                break;
+            case 6:
+                this.setUnlocalizedName("diamondObsidianBucket");
+                this.setTextureName("diamondObsidianbucket");
+                break;
+
+            default :
+                this.setUnlocalizedName("diamondBucket");
+                this.setTextureName("diamondBucket");
+                this.setMaxStackSize(4);
+                break;
         }
     }
 

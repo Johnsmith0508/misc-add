@@ -1,6 +1,5 @@
 package com.jsmith.miscadd.init;
 
-import com.jsmith.miscadd.handler.ConfigurationHandler;
 import com.jsmith.miscadd.item.*;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
@@ -47,6 +46,10 @@ public class ModItems {
     public static final ItemMA diamondBucket = new ItemDiamondBucket(Blocks.air,0);
     public static final ItemMA diamondLavaBucket = new ItemDiamondBucket(Blocks.lava,2);
     public static final ItemMA diamondWaterBucket = new ItemDiamondBucket(Blocks.water,1);
+    public static final ItemMA diamondLavaBucketHalf = new ItemDiamondBucket(Blocks.lava,4);
+    public static final ItemMA diamondWaterBucketHalf = new ItemDiamondBucket(Blocks.water,3);
+    public static final ItemMA diamondStoneBucket = new ItemDiamondBucket(Blocks.stone,5);
+    public static final ItemMA diamondObsidianBucket = new ItemDiamondBucket(Blocks.obsidian,6);
 
 
     public static void init()
@@ -81,6 +84,10 @@ public class ModItems {
         GameRegistry.registerItem(diamondBucket,"DiamondBucket");
         GameRegistry.registerItem(diamondLavaBucket,"DiamondLavaBucket");
         GameRegistry.registerItem(diamondWaterBucket,"DiamondWaterBucket");
+        GameRegistry.registerItem(diamondLavaBucketHalf,"DiamondLavaBucketHalf");
+        GameRegistry.registerItem(diamondWaterBucketHalf,"DiamondWaterBucketHalf");
+        GameRegistry.registerItem(diamondStoneBucket,"DiamondStoneBucket");
+        GameRegistry.registerItem(diamondObsidianBucket,"DiamondObsidianBucket");
 
 
     }
