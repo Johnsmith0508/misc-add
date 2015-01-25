@@ -67,4 +67,5 @@ public class MiscAdd {
  * TODO armor overlay
  * TODO diamond bucket water + lava = stone
  * TODO diamond bucket lava + water = obsidian
+ * TODO steel crafting
  */

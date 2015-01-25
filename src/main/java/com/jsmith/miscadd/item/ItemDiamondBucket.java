@@ -2,6 +2,7 @@ package com.jsmith.miscadd.item;
 
 import com.jsmith.miscadd.creativeTab.TabMA;
 import com.jsmith.miscadd.init.ModItems;
+import com.jsmith.miscadd.utility.LogHelper;
 import cpw.mods.fml.common.eventhandler.Event;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -13,6 +14,7 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.FillBucketEvent;
+import sun.rmi.runtime.Log;
 
 /**
  * Created by JohnSmith0508 on 24/1/15 at 3:58 PM.
@@ -20,6 +22,7 @@ import net.minecraftforge.event.entity.player.FillBucketEvent;
 public class ItemDiamondBucket extends ItemMA
 {
     private Block isFull;
+    private int contents;
 
     /**
      *
@@ -31,6 +34,7 @@ public class ItemDiamondBucket extends ItemMA
         this.setCreativeTab(TabMA.MA_TAB2);
         this.setMaxStackSize(1);
         this.isFull = block;
+        this.contents = contents;
         switch (contents)
         {
             case 1:
@@ -104,61 +108,112 @@ public class ItemDiamondBucket extends ItemMA
             }
             if (movingObjectPosition.typeOfHit == MovingObjectPosition.MovingObjectType.BLOCK)
             {
-                int i = movingObjectPosition.blockX;
-                int j = movingObjectPosition.blockY;
-                int k = movingObjectPosition.blockZ;
+                int blockX = movingObjectPosition.blockX;
+                int blockY = movingObjectPosition.blockY;
+                int blockZ = movingObjectPosition.blockZ;
 
-                if (!world.canMineBlock(entityPlayer, i, j, k))
+                /*if (!world.canMineBlock(entityPlayer, blockX, blockY, blockZ))
                 {
                     return itemStack;
                 }
 
-                if(flag)
+                if(!entityPlayer.canPlayerEdit(blockX,blockY,blockZ, movingObjectPosition.sideHit, itemStack))
                 {
-                    if(!entityPlayer.canPlayerEdit(i,j,k, movingObjectPosition.sideHit, itemStack))
-                    {
-                        return itemStack;
+                    return itemStack;
+                }*/
+
+                Material material = world.getBlock(blockX,blockY,blockZ).getMaterial();
+                int blockMetadata = world.getBlockMetadata(blockX,blockY,blockZ);
+
+                if (this.contents == 0)//if bucket is empty
+                {
+
+                    if (material == Material.water && blockMetadata == 0) {
+                        world.setBlockToAir(blockX, blockY, blockZ);
+                        return this.func_150910_a(itemStack, entityPlayer, ModItems.diamondWaterBucketHalf);
                     }
 
-                    Material material = world.getBlock(i,j,k).getMaterial();
-                    int l = world.getBlockMetadata(i,j,k);
-
-                    if (material == Material.water && l == 0)
-                    {
-                        world.setBlockToAir(i,j,k);
-                        return this.func_150910_a(itemStack,entityPlayer, ModItems.diamondWaterBucket);
-                    }
-
-                    if(material == Material.lava && l ==0)
-                    {
-                        world.setBlockToAir(i,j,k);
-                        return this.func_150910_a(itemStack,entityPlayer,ModItems.diamondLavaBucket);
+                    if (material == Material.lava && blockMetadata == 0) {
+                        world.setBlockToAir(blockX, blockY, blockZ);
+                        return this.func_150910_a(itemStack, entityPlayer, ModItems.diamondLavaBucketHalf);
                     }
                 }
-                else
+                else if (this.contents == 3 || this.contents == 4)//if bucket is partly filled
                 {
-                    if (this.isFull == Blocks.air)
+                    LogHelper.info("partly filled");
+                    if (material == Material.water || material == Material.lava)//and clicking on water or lava
                     {
-                        return new ItemStack(ModItems.diamondBucket);
+                        LogHelper.info("clicked on fluid");
+                        if (material == Material.lava && this.contents == 3 && blockMetadata == 0)//if block is lava and bucket has water and no metadata
+                        {
+                            world.setBlockToAir(blockX, blockY, blockZ);
+                            return this.func_150910_a(itemStack, entityPlayer, ModItems.diamondStoneBucket);
+                        }
+
+                        if (material == Material.water && this.contents == 4)//if block is water and bucket has lava and no metadata
+                        {
+                            world.setBlockToAir(blockX, blockY, blockZ);
+                            return this.func_150910_a(itemStack, entityPlayer, ModItems.diamondObsidianBucket);
+                        }
+
+                        if (material == Material.lava && this.contents == 4 && blockMetadata ==0)//if click on source of lava with half bucket of lava
+                        {
+                            world.setBlockToAir(blockX,blockY,blockZ);
+                            return this.func_150910_a(itemStack, entityPlayer, ModItems.diamondLavaBucket);
+                        }
+
+                        if (material == Material.water && this.contents == 3 && blockMetadata == 0)//if click on source of water with half bucket of water
+                        {
+                            world.setBlockToAir(blockX,blockY,blockZ);
+                            return this.func_150910_a(itemStack, entityPlayer, ModItems.diamondWaterBucket);
+                        }
                     }
 
-                    switch (movingObjectPosition.sideHit)
+                    if (material != Material.lava && material != Material.water)//if block is not water or lava
                     {
-                        case 1 : ++j; break;
-                        case 2 : --k; break;
-                        case 3 : ++k; break;
-                        case 4 : --i; break;
-                        case 5 : ++i; break;
-                    }
+                        LogHelper.info("clicked on non-fluid");
+                        switch (movingObjectPosition.sideHit)
+                        {
+                            case 1 : ++blockY; break;
+                            case 2 : --blockZ; break;
+                            case 3 : ++blockZ; break;
+                            case 4 : --blockX; break;
+                            case 5 : ++blockX; break;
+                        }
 
-                    if (!entityPlayer.canPlayerEdit(i,j,k, movingObjectPosition.sideHit, itemStack))
-                    {
-                        return itemStack;
-                    }
+                        if (!entityPlayer.canPlayerEdit(blockX,blockY,blockZ, movingObjectPosition.sideHit, itemStack))
+                        {
+                            return itemStack;
+                        }
 
-                    if(this.tryPlaceContainedLiquid(world, i,j,k) && !entityPlayer.capabilities.isCreativeMode)
+                        if(this.tryPlaceContainedLiquid(world, blockX,blockY,blockZ) && !entityPlayer.capabilities.isCreativeMode)
+                        {
+                            return new ItemStack(ModItems.diamondBucket);
+                        }
+                    }
+                }
+                else if (this.contents == 1 || this.contents == 2 || this.contents == 5 || this.contents == 6)//if bucket is full
+                {
+                    if (material != Material.lava && material != Material.water)//if block is not water or lava
                     {
-                        return new ItemStack(ModItems.diamondBucket);
+                        switch (movingObjectPosition.sideHit)
+                        {
+                            case 1 : ++blockY; break;
+                            case 2 : --blockZ; break;
+                            case 3 : ++blockZ; break;
+                            case 4 : --blockX; break;
+                            case 5 : ++blockX; break;
+                        }
+
+                        if (!entityPlayer.canPlayerEdit(blockX,blockY,blockZ, movingObjectPosition.sideHit, itemStack))
+                        {
+                            return itemStack;
+                        }
+
+                        if(this.tryPlaceContainedLiquid(world, blockX,blockY,blockZ) && !entityPlayer.capabilities.isCreativeMode)
+                        {
+                            return new ItemStack(ModItems.diamondBucket);
+                        }
                     }
                 }
             }
