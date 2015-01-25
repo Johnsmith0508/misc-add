@@ -14,7 +14,6 @@ import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.FillBucketEvent;
-import sun.rmi.runtime.Log;
 
 /**
  * Created by JohnSmith0508 on 24/1/15 at 3:58 PM.
@@ -212,6 +211,14 @@ public class ItemDiamondBucket extends ItemMA
 
                         if(this.tryPlaceContainedLiquid(world, blockX,blockY,blockZ) && !entityPlayer.capabilities.isCreativeMode)
                         {
+                            if(this.contents == 1)//water
+                            {
+                                return new ItemStack(ModItems.diamondWaterBucketHalf);
+                            }
+                            else if (this.contents == 2)//lava
+                            {
+                                return new ItemStack(ModItems.diamondLavaBucketHalf);
+                            }
                             return new ItemStack(ModItems.diamondBucket);
                         }
                     }

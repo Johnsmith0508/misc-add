@@ -42,7 +42,7 @@ public class ModBlocks
         GameRegistry.registerBlock(denseRedstone, "DenseRedstone");
         GameRegistry.registerBlock(denseQuartz, "DenseQuartz");
         GameRegistry.registerBlock(steelBlock, "SteelBlock");
-        GameRegistry.registerBlock(chest, "TestChest");
+        //GameRegistry.registerBlock(chest, "TestChest");
         GameRegistry.registerBlock(opaqueGlass, "OpaqueGlass");
         GameRegistry.registerBlock(wutGlass, "WutGlass");
         GameRegistry.registerBlock(denseObsidian, "DenseObsidian");
