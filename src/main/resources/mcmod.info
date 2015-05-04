@@ -1,14 +1,14 @@
 [
 {
-  "modid": "miscadd",
-  "name": "Misc Add",
-  "description": "Random things added to minecraft",
-  "version": "1.7.10-1.5",
+  "modid": "examplemod",
+  "name": "Example Mod",
+  "description": "Example placeholder mod.",
+  "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["Johnsmith0508"],
-  "credits": "All of the texture artists (including DinnerBeef, UnrealDinnerbone, and King_INF3RN0), along with all of the people who gave me the awesome ideas",
+  "authorList": ["ExampleDude"],
+  "credits": "The Forge and FML guys, for making this example",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
