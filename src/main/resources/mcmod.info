@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "MiscAdd",
+  "name": "Misc-Add",
+  "description": "A Mod That Adds Stuff",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["JohnSmith0508"],
+  "credits": "all of the people",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
