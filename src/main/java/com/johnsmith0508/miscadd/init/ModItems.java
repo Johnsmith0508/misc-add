@@ -13,6 +13,6 @@ public class ModItems
 
     public static void init()
     {
-        GameRegistry.registerItem(testItem, "test item");
+        GameRegistry.registerItem(testItem, ItemMA.getName());
     }
 }

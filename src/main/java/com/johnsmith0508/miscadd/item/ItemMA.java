@@ -1,6 +1,7 @@
 package com.johnsmith0508.miscadd.item;
 
 import com.johnsmith0508.miscadd.creativeTab.TabMa;
+import com.johnsmith0508.miscadd.reference.Ref;
 import net.minecraft.item.Item;
 
 /**
@@ -8,10 +9,20 @@ import net.minecraft.item.Item;
  */
 public class ItemMA extends Item
 {
+    private static String name = "DevItem";
     public ItemMA()
     {
-        this.setMaxStackSize(128);
         this.setCreativeTab(TabMa.MA_TAB);
-        this.setUnlocalizedName("miscadd:DevItem");
+        this.setUnlocalizedName(name);
+    }
+
+    public static String getName()
+    {
+        return name;
+    }
+
+    @Override
+    public Item setUnlocalizedName(String unlocalizedName) {
+        return super.setUnlocalizedName(Ref.RESCOURCE_PREFIX +unlocalizedName);
     }
 }

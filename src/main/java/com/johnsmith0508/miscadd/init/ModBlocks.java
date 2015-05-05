@@ -12,6 +12,6 @@ public class ModBlocks
     public static Block testBlock = new BlockMA();
     public static void init()
     {
-        GameRegistry.registerBlock(testBlock,"Test Block");
+        GameRegistry.registerBlock(testBlock,"Test_Block");
     }
 }

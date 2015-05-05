@@ -2,6 +2,7 @@ package com.johnsmith0508.miscadd;
 
 import com.johnsmith0508.miscadd.init.ModBlocks;
 import com.johnsmith0508.miscadd.init.ModItems;
+import com.johnsmith0508.miscadd.init.RenderItems;
 import com.johnsmith0508.miscadd.reference.Ref;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -26,7 +27,7 @@ public class MiscAdd
     @Mod.EventHandler
     public static void init(FMLInitializationEvent event)
     {
-
+        RenderItems.init(event);
     }
     @Mod.EventHandler
     public static void postInit(FMLPostInitializationEvent event)
